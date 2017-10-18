@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Modern an Admin Panel Category Flat Bootstarp Resposive Website Template | Login :: w3layouts</title>
+<title>Modern an Admin Panel Category Flat Bootstarp Resposive Website Template | Register :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
@@ -31,20 +31,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="login-logo">
     <mark>Modern</mark>
   </div>
-  <h2 class="form-heading">login</h2>
-  <div class="app-cam">
-	  <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
-          <?php include 'scr/sign.php'; ?>
-		<input type="text" class="text" required name="em" placeholder="Email">
-		<input type="password" required name="ps" placeholder="Password">
-		<div class="submit"><input type="submit" name="log" value="Login"></div>
-		<ul class="new">
-			<li class="new_right"><p class="sign">New here ?<a href="register.php"> Sign Up</a></p></li>
-			<div class="clearfix"></div>
-		</ul>
-	</form>
-  </div>
-   <div class="copy_layout login">
+  <h2 class="form-heading">Register</h2>
+  <form class="form-signin app-cam" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+      <?php include 'scr/sign.php'; ?>
+      <p>Enter your personal details below</p>
+      <input type="text" class="form-control1" placeholder="Full Name" required name="fn">
+      <input type="text" class="form-control1" placeholder="Phone" required name="ph">
+	  <p> Enter your account details below</p>
+      <input type="text" class="form-control1" placeholder="Email" required name="em">
+      <input type="password" class="form-control1" placeholder="Password"  required name="ps">
+      <input type="password" class="form-control1" placeholder="Re-type Password"  required name="cn">
+
+      <button class="btn btn-lg btn-success1 btn-block" type="submit" name="reg">Submit</button>
+      <div class="registration">
+          Already Registered.
+          <a class="" href="index.php">
+              Login
+          </a>
+      </div>
+  </form>
+   <div class="copy_layout login register">
       <p>Copyright &copy; 2015 Modern. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
    </div>
 </body>
