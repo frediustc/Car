@@ -5,7 +5,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.html">Modern</a>
+    <a class="navbar-brand" href="account.php">Modern</a>
 </div>
 <!-- /.navbar-header -->
 <ul class="nav navbar-nav navbar-right">
@@ -17,6 +17,6 @@
         </ul>
     </li>
 </ul>
-<form class="navbar-form navbar-right">
+<form class="navbar-form navbar-right" action="search.php" method="get">
   <input type="text" class="form-control" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
 </form>
