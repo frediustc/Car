@@ -6,12 +6,10 @@
 <thead>
  <tr>
    <th>#</th>
-   <th>Name</th>
-   <th>Description</th>
-   <th>Price</th>
-   <th>Type</th>
-   <th>Quantity</th>
-   <th>Option</th>
+   <th>Fullname</th>
+   <th>Email</th>
+   <th>Phone</th>
+   <!-- <th>Option</th> -->
  </tr>
 </thead>
 <tbody>
@@ -20,16 +18,14 @@
     $pdcts->execute();
     while ($p = $pdcts->fetch()) { ?>
     <tr>
-      <th scope="row"> <span class="flaticon-<?php echo strtolower($p['type']) ?>"></span></th>
-      <td><?php echo $p['name'] ?></td>
-      <td><?php echo $p['description'] ?></td>
-      <td><?php echo $p['price'] ?></td>
-      <td><?php echo $p['type'] ?></td>
-      <td><?php echo $p['qty'] ?></td>
-      <td>
+      <th scope="row"><?php echo $p['id'] ?></th>
+      <td><?php echo $p['fullname'] ?></td>
+      <td><?php echo $p['email'] ?></td>
+      <td><?php echo $p['phone'] ?></td>
+      <!-- <td>
           <a href="deletePdct.php?id=<?php echo $p['id'] ?>" class="btn btn-danger"><span class="fa fa-trash-o"></span></a>
           <a href="editPdct.php?id=<?php echo $p['id'] ?>" class="btn btn-info"><span class="fa fa-pencil"></span></a>
-      </td>
+      </td> -->
     </tr>
     <?php } ?>
 </tbody>

@@ -7,6 +7,9 @@
                    <a href="index.html"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
                </li>
                <li>
+                   <a href="account.php"><i class="fa fa-user nav_icon"></i>Account</a>
+               </li>
+               <li>
                    <a href="#"><i class="fa fa-laptop nav_icon"></i>Products<span class="fa arrow"></span></a>
                    <ul class="nav nav-second-level">
                        <li>
@@ -16,6 +19,7 @@
                    </ul>
                    <!-- /.nav-second-level -->
                </li>
+
                <li>
                    <a href="customers.php"><i class="fa fa-users nav_icon"></i>Customers</a>
                </li>
