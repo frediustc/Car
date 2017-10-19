@@ -5,3 +5,4 @@ try {
 } catch (Exception $e) {
     Die('Erreur : ' . $e->getMessage());
 }
+$cedis = '&#8373;';

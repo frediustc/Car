@@ -24,6 +24,9 @@
                    <a href="customers.php"><i class="fa fa-users nav_icon"></i>Customers</a>
                </li>
                <li>
+                   <a href="shop.php"><i class="fa fa-shopping-cart nav_icon"></i>Shop</a>
+               </li>
+               <li>
                    <a href="#"><i class="fa fa-indent nav_icon"></i>Menu Levels<span class="fa arrow"></span></a>
                    <ul class="nav nav-second-level">
                        <li>

@@ -1,4 +1,8 @@
-<?php include 'inc/db.php'; ?>
+<?php include 'inc/db.php';
+if(!isset($_SESSION['fullname'])){
+    header('location: Index.php');
+}
+?>
 
 <!--
 Author: W3layouts
@@ -25,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/flaticon.css" rel="stylesheet">
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
+<script src="js/shuffle.min.js"></script>
 <!----webfonts--->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 <!---//webfonts--->
