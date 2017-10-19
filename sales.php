@@ -8,9 +8,9 @@
    <th>FullName</th>
    <th>Name</th>
    <th>Description</th>
-   <th>Total</th>
    <th>Quantity</th>
-   <th>Option</th>
+   <th>Price</th>
+   <th>Total</th>
  </tr>
 </thead>
 <tbody>
@@ -30,12 +30,9 @@
       <td><?php echo $p['fullname'] ?></td>
       <td><?php echo $p['name'] ?></td>
       <td><?php echo $p['description'] ?></td>
-      <td><?php echo $p['price'] * $p['qty'] ?><?php echo $cedis ?></td>
       <td>x<?php echo $p['qty'] ?></td>
-      <td>
-          <a href="deleteOrder.php?id=<?php echo $p['id'] ?>" class="btn btn-danger"><span class="fa fa-trash-o"></span></a>
-          <a href="acceptOrder.php?id=<?php echo $p['id'] ?>" class="btn btn-info"><span class="fa fa-check"></span></a>
-      </td>
+      <td>x<?php echo $p['price'] ?></td>
+      <td><?php echo $p['price'] * $p['qty'] ?><?php echo $cedis ?></td>
     </tr>
     <?php } ?>
 </tbody>

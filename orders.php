@@ -34,7 +34,9 @@
       <td>x<?php echo $p['qty'] ?></td>
       <td>
           <a href="deleteOrder.php?id=<?php echo $p['id'] ?>" class="btn btn-danger"><span class="fa fa-trash-o"></span></a>
+          <?php if ($_SESSION['usertype'] == 2): ?>
           <a href="acceptOrder.php?id=<?php echo $p['id'] ?>" class="btn btn-info"><span class="fa fa-check"></span></a>
+          <?php endif; ?>
       </td>
     </tr>
     <?php } ?>

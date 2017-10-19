@@ -46,7 +46,7 @@ if(isset($_POST['addPdct'])){
         if($ins->execute(array($n, $d, $p, $q, $t))){
             echo '
             <div class="alert alert-success" role="alert">
-              <strong>Success!</strong>Project successfully added.
+              <strong>Success!</strong>Product successfully added.
             </div>
             ';
         }
@@ -100,7 +100,7 @@ if(isset($_POST['editPdct'])){
         if($ins->execute(array($n, $d, $p, $ns, $t, $_GET['id']))){
             echo '
             <div class="alert alert-success" role="alert">
-              <strong>Success!</strong>Project successfully updated.
+              <strong>Success!</strong>Product successfully updated.
             </div>
             ';
         }

@@ -23,9 +23,12 @@
                <li>
                    <a href="customers.php"><i class="fa fa-users nav_icon"></i>Customers</a>
                </li>
-               <li>
-                   <a href="shop.php"><i class="fa fa-shopping-cart nav_icon"></i>Shop</a>
-               </li>
+
+               <?php endif; ?>
+               <?php if ($_SESSION['usertype'] == 1): ?>
+                   <li>
+                       <a href="shop.php"><i class="fa fa-shopping-cart nav_icon"></i>Shop</a>
+                   </li>
                <?php endif; ?>
                <li>
                    <a href="orders.php"><i class="fa fa-list nav_icon"></i>Orders</a>

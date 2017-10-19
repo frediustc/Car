@@ -30,7 +30,7 @@
                      <span class="percent"><?php echo $p['description'] ?></span>
                      <p class="text-primary"><?php echo $av ?> in stock</p>
                  </div>
-                 <form class="" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+                 <form class="" method="post" action="<?php echo $_SERVER['PHP_SELF'] . '?s=' . $_GET['s'] ?>">
                      <div class="row">
                          <input type="hidden" name="pid" value="<?php echo $p['id'] ?>">
                          <div class="form-group col-xs-6">
