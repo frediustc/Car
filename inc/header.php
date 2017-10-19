@@ -18,5 +18,5 @@
     </li>
 </ul>
 <form class="navbar-form navbar-right" action="search.php" method="get">
-  <input type="text" class="form-control" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
+  <input type="text" class="form-control" value="Search..." name="s" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
 </form>

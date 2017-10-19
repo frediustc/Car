@@ -5,8 +5,10 @@
    <div class="widget_2 grid">
        <?php
        include 'scr/order.php';
-       $pdct = $db->prepare('SELECT * FROM producs ORDER BY id DESC');
-       $pdct->execute();
+       $s = trim(htmlspecialchars($_GET['s']));
+       $q = '%' . $s . '%';
+       $pdct = $db->prepare('SELECT * FROM producs WHERE name LIKE ? OR description LIKE ? ORDER BY id DESC');
+       $pdct->execute(array($q, $q));
        while ($p = $pdct->fetch()) {
            $count = $db->prepare('SELECT * FROM orders WHERE pid = ?');
            $count->execute(array($p['id']));
